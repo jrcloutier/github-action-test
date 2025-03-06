@@ -1,0 +1,13 @@
+name: First Action
+
+on:
+  workflow_dispatch:
+
+# A workflow run consists of one or more jobs
+jobs:
+  hello:
+    name: Say Hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world # at minimum, each steps should have a name ...
+        run: echo "Hello world" # ... and an action
